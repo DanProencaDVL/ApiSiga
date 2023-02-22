@@ -149,6 +149,7 @@
         "method":"GET",
         "query":"select * from vw_colaboradores"   
     },
+ 
     {
         "name":"auth",
         "path":"api/logout/interno",
