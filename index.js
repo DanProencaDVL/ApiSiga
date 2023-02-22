@@ -18,7 +18,7 @@ require("dotenv-safe").config();
 
 
 const app = new RouteMaker(endPoints)
-//const server = http.createServer(app.createRoute());
+
 
 
 const Myapp = app.createRoute()
@@ -38,10 +38,12 @@ Myapp.use('/avatar', pathComp(__dirname + "/uploads"));
 
 Myapp.get('/test',(req,res)=>{res.send('ok')})
 
-const server = https.createServer({
+/*const server = https.createServer({
     key: fs.readFileSync(__dirname+'/config/certificates/server.key'),
     cert: fs.readFileSync(__dirname+'/config/certificates/server.crt'),
-  }, Myapp);
+  }, Myapp);*/
+
+const server = http.createServer(Myapp);
 
 
 server.listen(process.env.PORT);
