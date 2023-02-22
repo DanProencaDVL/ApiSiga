@@ -36,6 +36,8 @@ const pathComp = require("express-static");
 Myapp.use('/avatar', pathComp(__dirname + "/uploads"));
 
 
+Myapp.get('/test',(req,res)=>{res.send('ok')})
+
 const server = https.createServer({
     key: fs.readFileSync(__dirname+'/config/certificates/server.key'),
     cert: fs.readFileSync(__dirname+'/config/certificates/server.crt'),
