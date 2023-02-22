@@ -9,11 +9,12 @@
     "jsonwebtoken": "^9.0.0",
     "md5": "^2.3.0",
     "mysql2": "^2.3.3",
-    "pm2": "^5.2.2"
+    "nodemon": "^2.0.20",
+    "pm2": "^5.2.2",
+    "serverless-http": "^3.1.1"
   },
   "scripts": {
-    "start": "pm2 start index.js",
-    "logs": "pm2 logs",
-    "restart": "pm2 restart index.js"
+    "build": "netlify-lambda build express",
+    "start": "nodemon server-local.js"
   }
 }
