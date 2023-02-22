@@ -1,0 +1,160 @@
+[
+    {
+        "name":"auth",
+        "path": "api/login/interno",
+        "method": "login",
+        "query": "select * from vw_auth where login = ? and password = ?"
+    },
+    {
+        "name":"siga",
+        "path": "api/admin/funcionarios",
+        "method": "GET",
+        "query": "select * from vw_funcionarios"
+    },
+    {
+        "name":"siga",
+        "path": "api/admin/terceirizados",
+        "method": "GET",
+        "query": "select * from vw_terceirizados"
+    },
+    {
+        "name":"siga",
+        "path": "api/admin/setores",
+        "method": "GET",
+        "query": "select * from sectors"
+    },
+    {
+        "name":"siga",
+        "path": "api/admin/setores",
+        "method": "POST",
+        "table":"sectors"
+    },
+    {
+        "name":"siga",
+        "path": "api/admin/funcionario",
+        "method": "POST",
+        "table":"employees"
+    },
+    {
+        "name":"siga",
+        "path": "api/admin/funcionario",
+        "method": "DELETE",
+        "table":"employees"
+    },
+    {
+        "name":"siga",
+        "path": "api/admin/funcionario",
+        "method": "PUT",
+        "table":"employees"
+    },
+    {
+        "name":"auth",
+        "path": "api/admin/usuarios",
+        "method": "GET",
+        "query": "select * from vw_internal_users"
+    },
+    {
+        "name":"auth",
+        "path":"api/admin/usuarios",
+        "method":"POST",
+        "table":"users"
+    },
+    {
+        "name":"auth",
+        "path":"api/admin/password",
+        "method":"POST",
+        "table":"authentication"
+    },
+    {
+        "name":"auth",
+        "path":"api/admin/usuarios",
+        "method":"DELETE",
+        "table":"users"
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/grupos",
+        "method":"GET",
+        "query":"select cod, name from usertype"
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/visitas",
+        "method":"GET",
+        "query":"select * from vw_schedule"
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/visitas",
+        "method":"PUT",
+        "table":"schedules"   
+    },
+    {
+        "name":"siga",
+        "path":"api/self/login",
+        "method":"GET",
+        "query":"select * from vw_schedule where approved = 1 and document = ?"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/visitantes",
+        "method":"PUT",
+        "table":"visitors"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/empresas",
+        "method":"GET",
+        "query":"select * from companies"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/empresas",
+        "method":"POST",
+        "table":"companies"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/empresas",
+        "method":"DELETE",
+        "table":"companies"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/regras",
+        "method":"GET",
+        "query":"select * from vw_regras"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/regras",
+        "method":"PUT",
+        "table":"rules"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/regras",
+        "method":"POST",
+        "table":"rules"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/regras",
+        "method":"DELETE",
+        "table":"rules"   
+    },
+    {
+        "name":"siga",
+        "path":"api/admin/colaboradores",
+        "method":"GET",
+        "query":"select * from vw_colaboradores"   
+    },
+    {
+        "name":"auth",
+        "path":"api/logout/interno",
+        "method":"PUT",
+        "table":"sessions"
+    }
+ 
+ 
+]

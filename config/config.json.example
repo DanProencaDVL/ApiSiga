@@ -1,0 +1,19 @@
+{
+
+    "test":{
+    "name": "Test",
+    "host": "localhost",
+    "user": "root",
+    "password": "**********",
+    "db": "testdb"    
+},
+    "auth":{
+    "name": "Auth",
+    "host": "localhost",
+    "user": "root",
+    "password": "18a80b01c",
+    "db": "auth"    
+}
+    
+
+}

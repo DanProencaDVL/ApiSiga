@@ -1,0 +1,23 @@
+{
+
+    "auth":{
+    "name": "auth",
+    "host": "209.145.58.96",
+    "user": "lbrtelec_adm",
+    "password": "18@80b01c",
+    "db": "lbrtelec_sigaAuth",
+    "port":"3306"
+
+    },    
+
+    "siga":{
+        "name": "siga",
+        "host": "209.145.58.96",
+        "user": "lbrtelec_adm",
+        "password": "18@80b01c",
+        "db": "lbrtelec_siga",
+        "port":"3306"    
+    
+} 
+
+}

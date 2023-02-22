@@ -1,0 +1,14 @@
+[
+    {
+        "name":"test",
+        "path": "local/test",
+        "method": "GET",
+        "query": "select * from tb_test"
+    },
+    {
+        "name":"auth",
+        "path": "login",
+        "method": "login",
+        "query": "select id from login where username = ? and password = ?"
+    }
+]
